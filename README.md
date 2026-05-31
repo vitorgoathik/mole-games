@@ -1,24 +1,21 @@
 # mole-games
 
-Monorepo for mobile games built with Godot 4 + C#.
+Monorepo for games built with Unity 6.
 
 ## Structure
 
 ```
-games/          # one subfolder per game (each is its own Godot project)
-shared/
-  assets/       # fonts, sounds, sprites shared across games
-  themes/       # UI themes
-docs/           # game design docs
+unity-projects/
+  evo_dash/       # 2D platformer with evolution mechanic
+builds/           # standalone build outputs (gitignored)
+docs/             # game design docs
 ```
 
 ## Requirements
 
-- [Godot Engine 4.x (.NET version)](https://godotengine.org/download) — required for C# support
-- [.NET SDK 8+](https://dotnet.microsoft.com/download)
+- [Unity Hub](https://unity.com/download)
+- Unity 6000.4.9f1 (install via Unity Hub)
 
-## Adding a new game
+## evo_dash
 
-1. Create a new Godot project inside `games/<game-name>/`
-2. Set the project to use C# (Project > Project Settings > Mono)
-3. Add shared assets via symlink or copy from `shared/`
+A 2D platformer where the player collects items to evolve into randomised forms, each with distinct movement traits (speed, jump height, dash, double jump).

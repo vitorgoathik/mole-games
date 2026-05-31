@@ -1,0 +1,34 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Open Unity (evo_dash)",
+      "type": "shell",
+      "command": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.4.9f1\\Editor\\Unity.exe",
+      "args": ["-projectPath", "${workspaceFolder}\\unity-projects\\evo_dash"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Build evo_dash (Windows)",
+      "type": "shell",
+      "command": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.4.9f1\\Editor\\Unity.exe",
+      "args": [
+        "-batchmode", "-nographics", "-quit",
+        "-projectPath", "${workspaceFolder}\\unity-projects\\evo_dash",
+        "-buildWindows64Player", "${workspaceFolder}\\builds\\evo_dash\\evo_dash.exe",
+        "-logFile", "${workspaceFolder}\\builds\\evo_dash\\build.log"
+      ],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    }
+  ]
+}
